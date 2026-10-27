@@ -1,0 +1,6 @@
+{
+  "name": "Petualangan Huruf Hh - Game TK A",
+  "description": "Game edukasi interaktif pengenalan huruf Hh dan kosakata bergambar besar bersuara untuk anak TK A.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
