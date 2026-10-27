@@ -15,6 +15,7 @@ import { QuizMode } from './components/QuizMode';
 import { BubbleMode } from './components/BubbleMode';
 import { TracingMode } from './components/TracingMode';
 import { SongMode } from './components/SongMode';
+import { ClassroomMode } from './components/ClassroomMode';
 import { StickerAlbumModal } from './components/StickerAlbumModal';
 
 export default function App() {
@@ -117,6 +118,12 @@ export default function App() {
             <QuizMode
               vocabList={VOCABULARY_LIST}
               onCorrectAnswer={handleRewardStar}
+            />
+          )}
+
+          {currentMode === 'classroom' && (
+            <ClassroomMode
+              onRewardGlobalStar={() => addStar(1)}
             />
           )}
 

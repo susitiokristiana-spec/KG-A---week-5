@@ -1,7 +1,7 @@
 import React from 'react';
 import { GameMode } from '../types';
 import { audio } from '../services/audioService';
-import { Star, Trophy, Volume2, VolumeX, Music, Compass, HelpCircle, Pencil, PlayCircle } from 'lucide-react';
+import { Star, Trophy, Volume2, VolumeX, Music, Compass, HelpCircle, Pencil, PlayCircle, Users } from 'lucide-react';
 
 interface Props {
   currentMode: GameMode;
@@ -27,6 +27,7 @@ export const Navbar: React.FC<Props> = ({
   const modes: { id: GameMode; label: string; icon: React.ReactNode; color: string }[] = [
     { id: 'explore', label: 'Jelajah Hh', icon: <Compass className="w-5 h-5" />, color: 'hover:text-amber-600' },
     { id: 'quiz', label: 'Tebak Gambar', icon: <HelpCircle className="w-5 h-5" />, color: 'hover:text-orange-600' },
+    { id: 'classroom', label: 'Game 17 Anak', icon: <Users className="w-5 h-5" />, color: 'hover:text-purple-600' },
     { id: 'bubbles', label: 'Balon Huruf', icon: <span>🎈</span>, color: 'hover:text-sky-600' },
     { id: 'trace', label: 'Jiplak Huruf', icon: <Pencil className="w-5 h-5" />, color: 'hover:text-emerald-600' },
     { id: 'song', label: 'Lagu Ceria', icon: <PlayCircle className="w-5 h-5" />, color: 'hover:text-pink-600' },

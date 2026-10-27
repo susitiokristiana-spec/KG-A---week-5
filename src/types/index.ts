@@ -1,4 +1,24 @@
-export type GameMode = 'explore' | 'quiz' | 'bubbles' | 'trace' | 'song';
+export type GameMode = 'explore' | 'quiz' | 'bubbles' | 'trace' | 'song' | 'classroom';
+
+export interface Student {
+  id: number;
+  name: string;
+  avatar: string;
+  stars: number;
+  completedMission: boolean;
+  team: 'H' | 'F' | 'G';
+}
+
+export interface ClassMission {
+  id: string;
+  type: 'action' | 'sound' | 'quiz' | 'mystery';
+  title: string;
+  instruction: string;
+  audioPrompt: string;
+  icon: string;
+  letterFocus: 'H' | 'F' | 'G';
+  targetWord?: string;
+}
 
 export interface Syllable {
   text: string;
